@@ -1,3 +1,181 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
 body {
-    background-color:  red;
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    justify-content: space-between;
+}
+a {
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.header{
+    display: flex;
+    justify-content: flex-end;
+    flex: 1 1 100%;
+    height: 50px;
+    background-color: rgb(230, 226, 224);
+}
+.nav-list {
+    display: flex;
+    justify-self: flex-end;
+    align-items: center;
+    /* list-style: none; */
+}
+.nav-link {
+   color: rgb(177, 54, 81);
+}
+.nav-item{
+    padding: 0 20px;
+    transition: 0.3s;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.nav-link:hover{
+    color: rgb(158, 120, 44);
+}
+.main{
+    border-color: rgb(230, 226, 224);
+}
+.main-content{
+    display: flex;
+    flex-wrap: wrap;
+}
+@media (max-width: 760px){
+    .section{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .profile-name{
+        text-transform: uppercase;
+        font-size: 20px;
+    }
+    .title-text{
+        font-size: 20px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+    .text-content{
+        font-size: 14px;
+    }
+    .social-contacts{
+        font-size: 10px;
+        font-weight: bold;
+    }
+}
+.section{
+    flex: 1 0 35%;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: rgb(228, 227, 226);
+    box-shadow: 0px 0px 39px 6px rgba(216, 216, 200, 1);
+}
+.profile-photo{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.profile-name{
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    padding: 20px;
+    color: rgb(60, 22, 56)
+}
+.profile-name::before{
+    content: '';
+    position: absolute;
+    width: 30%;
+    bottom: 0;
+    height: 5px;
+    left: 40%;
+    background-color: rgb(206, 193, 160);
+    margin: 0 0 0 -25px;
+}
+.title-text{
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgb(60, 22, 56)
+}
+.text-content{
+    font-size: 20px;
+    padding: 0;
+    line-height: 30px;
+    color: rgb(46, 16, 43);
+}
+.social-contacts{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 30px;
+    margin: 0 5px 0 0;
+    color: rgb(46, 16, 43);
+}
+.profile-contacts_list li:nth-child(1)::before{
+    content: '';
+    background-image: url('assets/svg/tel-icon.svg');
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0 0 0 15px;
+    margin: 0 5px 0 0;
+}
+.profile-contacts_list li:nth-child(2)::before{
+    content: '';
+    background-image: url('assets/svg/mail-icon.svg');
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0 0 0 15px;
+    margin: 0 5px 0 0;    
+}
+.profile-contacts_list li:nth-child(3)::before{
+    content:'';
+    background-image: url('assets/svg/discord-icon.svg');
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0 0 0 15px;
+    margin: 0 5px 0 0;
+}
+.footer{
+    background-color: rgb(169, 167, 166);
+}
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 10px;
+}
+.footer-info{
+    display: flex;
+    justify-content: space-between;
+}
+.year{
+    font-size: 16px;
+    font-weight: bold;
+}
+.git-link{
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    color: rgb(46, 16, 43);
+    margin-left: 20px;
+}
+.rss{
+    width: 120px;
+    height: 45px;
 }
