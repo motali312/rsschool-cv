@@ -1,12 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>cv</title>
 </head>
 <body>
-    
+<header class="header">
+<div class="container">
+    <nav class="nav">
+        <ul class="nav-list">
+            <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+            <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
+            <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+            <li class="nav-item"><a href="#code" class="nav-link">Code Example</a></li>
+            <li class="nav-item"><a href="language" class="nav-link">Language</a></li>
+        </ul>
+    </nav>
+</div>
+</header>
+<main class="main">
+    <div class="container">
+        <div class="main-content">
+            <section class="section">
+                <img src="assets/img/avatar.jpg" alt="Profile Photo" class="profile-photo"> 
+            </section>
+            <section class="section">
+                <h1 class="profile-name">Surapov Shermamat</h1>
+            </section>
+            <section class="section" id="contacts">
+                <h2 class="title-text">Contacts</h2>
+                <ul class="profile-contacts_list text-content">
+                    <li><span class="social-contacts">Tel:</span>+996555552552</li>
+                    <li><span class="social-contacts">E-mail:</span>motali312@github.com</li>
+                    <li><span class="social-contacts">Discord:</span>motali312#1930</li>
+                </ul>
+            </section>
+            <section class="section" id="summary">
+                <h2 class="title-text">About me</h2>
+                <p class="text-content"> I am 25 yaers old and I want to study in RSSchool!</p>
+            </section>
+            <section class="section" id="code">
+                <h2 class="title-text">Code Example</h2>
+                <pre><code class="text-conent">
+                    function multiply(a,b) {
+                        return a * b
+                    }
+                </code></pre>
+            </section>
+            <section class="section" id="skills">
+                <h2 class="title-text">Skills</h2>
+                <ul class="text-content">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JS(basic)</li>
+                </ul>
+            </section>
+                <section class="section" id="language">
+                    <h2 class="little-text">Language</h2>
+                    <ul class="text-content">
+                        <li>Russion</li>
+                        <li>Kyrgyz</li>
+                        <li>English(elementary)</li>
+                    </ul>
+                </section>
+        </div>
+    </div>
+</main>
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-info">
+                <p class="year">2022</p>
+                <p class="git-name"><a href="https://github.com/motali312" class="git-link">motali312</a></p>
+            </div>
+            <img src="assets/svg/rs_school_js.svg" alt="RSS" class="rss">
+        </div>
+    </div>
+</footer>
 </body>
 </html>
